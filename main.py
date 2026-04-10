@@ -14,7 +14,7 @@ def home():
 def generate_prompt(data: PromptRequest):
     user_input = data.text
     
-    # Abhi dummy AI logic (baad me real AI add karenge)
-    improved_prompt = f"✨ Professional Version:\n{user_input.capitalize()} in a clear and structured way."
+    # Dummy AI logic
+    improved_prompt = f"✨ Professional Version:\n{user_input.strip().capitalize()} in a clear and structured way."
     
     return {"result": improved_prompt}
